@@ -1,0 +1,472 @@
+.nav-desk {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  position: relative;
+  top: 0;
+  z-index: 5; }
+
+.redes {
+  font-size: 12px; }
+
+.backimg {
+  height: 1000px;
+  width: 99%;
+  position: absolute;
+  top: 0;
+  background-image: url(../images/background/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .backimg .backimg:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/bg-overlay.png);
+    background-repeat: repeat;
+    background-size: 1px 1px; }
+
+.container__itemuno {
+  position: relative;
+  right: 100px;
+  top: 150px; }
+  .container__itemuno img {
+    width: 175px; }
+
+.container__itemdos {
+  position: relative;
+  left: 80px; }
+  .container__itemdos img {
+    width: 150px; }
+
+.carrousel {
+  margin-top: 75px;
+  width: 90vw; }
+
+.text__item span {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; }
+
+.footer {
+  position: relative;
+  z-index: 1000;
+  font-family: 'Open Sans', sans-serif; }
+
+.about-responsive {
+  display: none; }
+
+.about-desk {
+  margin-top: 50px; }
+
+.imguno,
+.imgdos,
+.imgtres {
+  box-shadow: 15px -15px 0px #2b6383; }
+
+.section__container-responsive {
+  position: relative;
+  z-index: 5020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 250px;
+  color: #fff;
+  text-align: center;
+  width: 33%;
+  font-family: "Montserrat";
+  font-size: 19px; }
+  .section__container-responsive .imguno-responsive,
+  .section__container-responsive .imgdos-responsive,
+  .section__container-responsive .imgtres-responsive {
+    width: 85vw;
+    box-shadow: 10px -10px 0px #2b6383; }
+
+.cardevent__container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 275px 275px 275px 275px;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+  gap: 20px; }
+  .cardevent__container .cardevent__item {
+    position: relative;
+    z-index: 6000;
+    width: 275px;
+    height: 300px; }
+  .cardevent__container .cardevent__face {
+    position: absolute;
+    z-index: 6000;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s; }
+  .cardevent__container .cardevent__front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000; }
+    .cardevent__container .cardevent__front img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .cardevent__container .cardevent__front h3 {
+      font-size: 25px;
+      font-weight: bold;
+      position: absolute;
+      top: 240px;
+      width: 100%;
+      height: 60px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center; }
+    .cardevent__container .cardevent__front .title {
+      font-family: "Montserrat";
+      font-weight: bold; }
+    .cardevent__container .cardevent__front .descp {
+      font-family: "Montserrat";
+      font-weight: normal;
+      font-size: 15px;
+      margin-left: -50px; }
+  .cardevent__container .cardevent__back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #032336;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000; }
+    .cardevent__container .cardevent__back .link {
+      border-top: solid 1px #f3f3f3;
+      height: 50px;
+      line-height: 60px; }
+      .cardevent__container .cardevent__back .link a {
+        font-family: "Roboto";
+        padding: 8px;
+        text-decoration: none;
+        color: #f3f3f3;
+        border: 1px solid rgba(255, 255, 255, 0.3); }
+      .cardevent__container .cardevent__back .link a:hover {
+        border: 1px solid white;
+        transition: all 0.3s ease-in-out; }
+    .cardevent__container .cardevent__back h3 {
+      font-family: "Montserrat";
+      font-size: 22px;
+      margin-top: 5px;
+      letter-spacing: 2px; }
+    .cardevent__container .cardevent__back p {
+      letter-spacing: 1px;
+      font-family: "Montserrat";
+      font-size: 11px; }
+
+.cardevent__item:hover .cardevent__front {
+  transform: perspective(600px) rotateY(180deg); }
+
+.cardevent__item:hover .cardevent__back {
+  transform: perspective(600px) rotateY(360deg); }
+
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  margin-left: 15px;
+  justify-content: center;
+  margin-bottom: 25px; }
+  .cards__container .cards__item {
+    margin-top: 35px;
+    width: 180px;
+    height: 220px;
+    position: relative;
+    z-index: 5000;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9); }
+    .cards__container .cards__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(50%) blur(0px) opacity(100%);
+      transition: all 500ms ease-out; }
+    .cards__container .cards__item .cards__capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+      .cards__container .cards__item .cards__capa h3 {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Roboto";
+        margin-bottom: 220px;
+        transition: all 500ms ease-out;
+        margin-top: 20px; }
+      .cards__container .cards__item .cards__capa p {
+        color: #fff;
+        font-size: 13px;
+        font-family: "Montserrat";
+        width: 100%;
+        max-width: 220px;
+        margin-top: -70px; }
+      .cards__container .cards__item .cards__capa h4 {
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+        top: 40px;
+        padding: 3px;
+        font-family: "Montserrat";
+        display: inline;
+        border: 1px solid #fff;
+        transition: all 500ms ease-out;
+        cursor: pointer; }
+      .cards__container .cards__item .cards__capa a {
+        text-decoration: none;
+        color: #FFF; }
+  .cards__container .cards__item:hover > .cards__capa {
+    opacity: 1;
+    visibility: visible; }
+  .cards__container .cards__item:hover > .cards__capa h3 {
+    margin-top: 70px;
+    margin-bottom: 70px; }
+  .cards__container .cards__item:hover img {
+    transform: scale(1.2);
+    filter: grayscale(0) blur(0px) opacity(100%); }
+  .cards__container .cards__item > .cards__capa a:hover {
+    color: #000000; }
+  .cards__container .cards__item > .cards__capa h4:hover {
+    background-color: #fff;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.4s;
+    color: #000000; }
+
+.form__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px; }
+  .form__container .form__item {
+    width: 350px;
+    height: 700px;
+    background-color: #0f0e0e;
+    color: #fff;
+    font-family: "Montserrat", sans-serif; }
+    .form__container .form__item h1 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 25px; }
+    .form__container .form__item form {
+      margin-top: 15px; }
+    .form__container .form__item .input {
+      margin-left: 10px;
+      width: 90%;
+      outline: none;
+      background: none;
+      border: none;
+      color: #fff;
+      border-bottom: 1px solid red; }
+    .form__container .form__item .label {
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 90%;
+      outline: none;
+      background: none;
+      border: none;
+      color: #fff; }
+    .form__container .form__item input, .form__container .form__item textarea {
+      border-bottom: 1px solid red; }
+    .form__container .form__item button {
+      background-color: red;
+      border: none;
+      margin-top: 55px;
+      margin-left: 80px;
+      cursor: pointer; }
+      .form__container .form__item button .btn {
+        font-size: 15px;
+        border: none;
+        margin-top: 8px;
+        width: 200px;
+        color: #fff;
+        background-color: transparent;
+        font-family: "Montserrat";
+        cursor: pointer; }
+    .form__container .form__item button:hover {
+      background-color: #8c0101; }
+
+.form__info {
+  width: 300px;
+  height: 700px;
+  color: #fff;
+  background-color: #000;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px; }
+  .form__info h2 {
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .form__info p {
+    margin-bottom: 10px; }
+  .form__info span {
+    margin-left: 7px; }
+  .form__info h3 {
+    margin-top: 50px;
+    font-weight: unset;
+    font-size: 13px; }
+  .form__info h4 {
+    margin-top: 50px; }
+
+@media screen and (max-width: 399px) {
+  .backimg {
+    background-image: url(../images/background/back.jpg); }
+  .backimg:before {
+    display: none;
+    overflow: hidden; }
+  .container__itemuno {
+    width: 40vw;
+    right: 85px; }
+  .container__itemdos {
+    width: 40vw;
+    left: 100px; }
+  .redes {
+    font-size: 15px;
+    margin-left: 30px; }
+  .carrousel {
+    margin-left: -60px;
+    width: 100vw; }
+  .about-desk {
+    display: none; }
+  .about-responsive {
+    display: block; }
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px; }
+  .cardevent__container {
+    width: 100vw;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(28, 350px);
+    margin-right: 720px;
+    margin-top: 125px;
+    overflow: hidden; }
+  .cardevent__item {
+    overflow: hidden;
+    margin-left: 10px; }
+  .cards__container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px; }
+  .cards__item {
+    width: 250px;
+    height: 270px; }
+  .form__info {
+    display: none; } }
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .backimg {
+    background-image: url(../images/background/back.jpg); }
+  .backimg:before {
+    display: none;
+    overflow: hidden; }
+  .backimg:before {
+    overflow: hidden; }
+  .nav-desk {
+    width: 100vw; }
+  .container__itemuno {
+    width: 40vw;
+    right: 85px; }
+  .container__itemdos {
+    width: 40vw;
+    left: 100px; }
+  .redes {
+    font-size: 14px;
+    margin-left: 40px; }
+  .carrousel {
+    position: relative;
+    right: 70px;
+    width: 100vw; }
+  footer {
+    width: 90vw;
+    margin-left: 20px; }
+  .nav-desk {
+    width: 82vw; }
+  .about-desk {
+    display: none; }
+  .about-responsive {
+    display: block; }
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px; }
+  .cardevent__container {
+    width: 100vw;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(28, 350px);
+    margin-right: 720px;
+    margin-top: 125px;
+    overflow: hidden; }
+  .cardevent__item {
+    margin-left: 10px; }
+  .cards__container {
+    grid-template-columns: 200px 200px; }
+  .form__container {
+    min-width: 400px; }
+  .form__item {
+    min-width: 250px; }
+    .form__item button {
+      position: relative;
+      left: -10px; }
+  .form__info {
+    display: none; } }
+
+@media screen and (min-width: 601px) and (max-width: 656px) {
+  .backimg {
+    background-image: url(../images/background/back.jpg); }
+  .backimg:before {
+    display: none;
+    overflow: hidden; }
+  .redes {
+    font-size: 17px;
+    margin-left: 60px; }
+  .nav-desk {
+    width: 82vw; }
+  .about-desk {
+    display: none; }
+  .about-responsive {
+    display: block; }
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px; }
+  .cardevent__container {
+    width: 100vw;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(28, 375px);
+    margin-right: 720px;
+    margin-top: 125px;
+    overflow: hidden; }
+  .cardevent__item {
+    margin-left: 10px; }
+  .cards__container {
+    grid-template-columns: 200px 200px; }
+  .form__container {
+    min-width: 500px; }
+  .form__item {
+    min-width: 450px;
+    margin-left: 30px; }
+    .form__item button {
+      position: relative;
+      left: 50px; }
+  .form__info {
+    display: none; } }
