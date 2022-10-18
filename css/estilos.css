@@ -42,10 +42,6 @@
   .container__itemdos img {
     width: 150px; }
 
-.carrousel {
-  margin-top: 75px;
-  width: 90vw; }
-
 .text__item span {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
@@ -329,9 +325,9 @@
 @media screen and (max-width: 399px) {
   .backimg {
     background-image: url(../images/background/back.jpg); }
-  .backimg:before {
-    display: none;
-    overflow: hidden; }
+    .backimg .backimg:before {
+      display: none;
+      overflow: hidden; }
   .container__itemuno {
     width: 40vw;
     right: 85px; }
@@ -358,31 +354,28 @@
     margin-right: 720px;
     margin-top: 125px;
     overflow: hidden; }
-  .cardevent__item {
-    overflow: hidden;
-    margin-left: 10px; }
+    .cardevent__container .cardevent__item {
+      margin-left: 10px; }
   .cards__container {
     width: 100vw;
     display: grid;
     grid-template-columns: 200px;
-    margin-left: 5px;
+    margin-left: -25px;
     justify-content: center;
     align-items: center;
     margin-bottom: 25px; }
-  .cards__item {
-    width: 250px;
-    height: 270px; }
+    .cards__container .cards__item {
+      width: 250px;
+      height: 270px; }
   .form__info {
     display: none; } }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
   .backimg {
     background-image: url(../images/background/back.jpg); }
-  .backimg:before {
-    display: none;
-    overflow: hidden; }
-  .backimg:before {
-    overflow: hidden; }
+    .backimg .backimg:before {
+      display: none;
+      overflow: hidden; }
   .nav-desk {
     width: 100vw; }
   .container__itemuno {
@@ -398,9 +391,6 @@
     position: relative;
     right: 70px;
     width: 100vw; }
-  footer {
-    width: 90vw;
-    margin-left: 20px; }
   .nav-desk {
     width: 82vw; }
   .about-desk {
@@ -417,26 +407,26 @@
     margin-right: 720px;
     margin-top: 125px;
     overflow: hidden; }
-  .cardevent__item {
-    margin-left: 10px; }
+    .cardevent__container .cardevent__item {
+      margin-left: 10px; }
   .cards__container {
     grid-template-columns: 200px 200px; }
   .form__container {
     min-width: 400px; }
-  .form__item {
-    min-width: 250px; }
-    .form__item button {
-      position: relative;
-      left: -10px; }
+    .form__container .form__item {
+      min-width: 250px; }
+      .form__container .form__item button {
+        position: relative;
+        left: -10px; }
   .form__info {
     display: none; } }
 
 @media screen and (min-width: 601px) and (max-width: 656px) {
   .backimg {
     background-image: url(../images/background/back.jpg); }
-  .backimg:before {
-    display: none;
-    overflow: hidden; }
+    .backimg .backimg:before {
+      display: none;
+      overflow: hidden; }
   .redes {
     font-size: 17px;
     margin-left: 60px; }
@@ -456,17 +446,84 @@
     margin-right: 720px;
     margin-top: 125px;
     overflow: hidden; }
-  .cardevent__item {
-    margin-left: 10px; }
+    .cardevent__container .cardevent__item {
+      margin-left: 10px; }
   .cards__container {
     grid-template-columns: 200px 200px; }
   .form__container {
     min-width: 500px; }
-  .form__item {
-    min-width: 450px;
-    margin-left: 30px; }
-    .form__item button {
-      position: relative;
-      left: 50px; }
+    .form__container .form__item {
+      min-width: 450px;
+      margin-left: 30px; }
+      .form__container .form__item button {
+        position: relative;
+        left: 50px; }
   .form__info {
     display: none; } }
+
+@media screen and (min-width: 657px) and (max-width: 800px) {
+  .backimg {
+    background-image: url(../images/background/back.jpg); }
+    .backimg .backimg:before {
+      display: none;
+      overflow: hidden; }
+  .redes {
+    font-size: 20px;
+    margin-left: 80px; }
+  .nav-desk {
+    width: 82vw; }
+  .about-desk {
+    display: none; }
+  .about-responsive {
+    display: block; }
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px; }
+  .cardevent__container {
+    width: 100vw;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(28, 375px);
+    margin-right: 720px;
+    margin-top: 125px;
+    overflow: hidden; }
+    .cardevent__container .cardevent__item {
+      margin-left: 10px; } }
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+  .backimg {
+    background-image: url(../images/background/back.jpg); }
+    .backimg .backimg:before {
+      display: none;
+      overflow: hidden; }
+  .redes {
+    font-size: 20px;
+    margin-left: 100px; }
+  .nav-desk {
+    width: 82vw; }
+  .about-desk {
+    display: none; }
+  .about-responsive {
+    display: block; }
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px; }
+  .cardevent__container {
+    width: 100vw;
+    grid-template-columns: 245px 245px 245px;
+    grid-template-rows: repeat(10, 300px);
+    position: relative;
+    left: -15px; }
+    .cardevent__container .cardevent__item {
+      margin-left: 10px;
+      width: 250px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .cardevent__container {
+    width: 100vw;
+    grid-template-columns: 235px 235px 235px 235px;
+    grid-template-rows: repeat(10, 300px);
+    position: relative;
+    left: -15px; }
+    .cardevent__container .cardevent__item {
+      margin-left: 10px;
+      width: 230px; } }

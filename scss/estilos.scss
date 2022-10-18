@@ -23,19 +23,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   .backimg:before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,.5);
-  background-image: url(../images/bg-overlay.png);
-  background-repeat: repeat;
-  background-size: 1px 1px;
-}
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    background-image: url(../images/bg-overlay.png);
+    background-repeat: repeat;
+    background-size: 1px 1px;
+  }
 }
 
 // ------------------------------------------- LOGOS --------------------------------------------
@@ -57,16 +56,13 @@
   }
 }
 
-.carrousel {
-  margin-top: 75px;
-  width: 90vw;
-}
-
 .text__item span {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
 }
+
+// ------------------------------------------- FOOTER --------------------------------------------
 
 .footer {
   position: relative;
@@ -415,11 +411,10 @@
 
   .backimg {
     background-image: url(../images/background/back.jpg);
-  }
-
-  .backimg:before {
-    display: none;
-    overflow: hidden;
+    .backimg:before {
+      display: none;
+      overflow: hidden;
+    }
   }
 
   .container__itemuno {
@@ -441,7 +436,6 @@
     margin-left: -60px;
     width: 100vw;
   }
-  
 
   // SOBRE NOSOTROS
 
@@ -467,11 +461,9 @@
     margin-right: 720px;
     margin-top: 125px;
     overflow: hidden;
-  }
-
-  .cardevent__item {
-    overflow: hidden;
-    margin-left: 10px;
+    .cardevent__item {
+      margin-left: 10px;
+    }
   }
 
   // ARTISTAS
@@ -480,15 +472,14 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 200px;
-    margin-left: 5px;
+    margin-left: -25px;
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-  }
-  
-  .cards__item {
-    width: 250px;
-    height: 270px;
+    .cards__item {
+      width: 250px;
+      height: 270px;
+    }
   }
 
   // CONTACTO
@@ -505,15 +496,10 @@
 
   .backimg {
     background-image: url(../images/background/back.jpg);
-  }
-
-  .backimg:before {
-    display: none;
-    overflow: hidden;
-  }
-
-  .backimg:before {
-    overflow: hidden;
+    .backimg:before {
+      display: none;
+      overflow: hidden;
+    }
   }
 
   .nav-desk {
@@ -539,11 +525,6 @@
     position: relative;
     right: 70px;
     width: 100vw;
-  }
-
-  footer {
-    width: 90vw;
-    margin-left: 20px;
   }
 
   // SOBRE NOSOTROS
@@ -574,12 +555,10 @@
     margin-right: 720px;
     margin-top: 125px;
     overflow: hidden;
+    .cardevent__item {
+      margin-left: 10px;
+    }
   }
-
-  .cardevent__item {
-    margin-left: 10px;
-  }
-
 
   // ARTISTAS
 
@@ -591,13 +570,12 @@
 
   .form__container {
     min-width: 400px;
-  }
-
-  .form__item {
-    min-width: 250px;
-    button {
-      position: relative;
-      left: -10px;
+    .form__item {
+      min-width: 250px;
+      button {
+        position: relative;
+        left: -10px;
+      }
     }
   }
 
@@ -612,11 +590,10 @@
 
   .backimg {
     background-image: url(../images/background/back.jpg);
-  }
-
-  .backimg:before {
-    display: none;
-    overflow: hidden;
+    .backimg:before {
+      display: none;
+      overflow: hidden;
+    }
   }
 
   .redes {
@@ -652,12 +629,10 @@
     margin-right: 720px;
     margin-top: 125px;
     overflow: hidden;
+    .cardevent__item {
+      margin-left: 10px;
+    }
   }
-
-  .cardevent__item {
-    margin-left: 10px;
-  }
-
 
   // ARTISTAS
 
@@ -669,14 +644,13 @@
 
   .form__container {
     min-width: 500px;
-  }
-
-  .form__item {
-    min-width: 450px;
-    margin-left: 30px;
-    button {
-      position: relative;
-      left: 50px;
+    .form__item {
+      min-width: 450px;
+      margin-left: 30px;
+      button {
+        position: relative;
+        left: 50px;
+      }
     }
   }
 
@@ -684,3 +658,120 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 657px) and (max-width:800px) {
+
+  // INDEX.HTML
+
+  .backimg {
+    background-image: url(../images/background/back.jpg);
+    .backimg:before {
+      display: none;
+      overflow: hidden;
+    }
+  }
+
+  .redes {
+    font-size: 20px;
+    margin-left: 80px;
+  }
+
+  // SOBRE NOSOTROS
+
+  .nav-desk {
+    width: 82vw;
+  }
+
+  .about-desk {
+    display: none;
+  }
+
+  .about-responsive {
+    display: block;
+  }
+
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px;
+  }
+
+  // EVENTOS
+
+  .cardevent__container{
+    width: 100vw;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(28, 375px);
+    margin-right: 720px;
+    margin-top: 125px;
+    overflow: hidden;
+    .cardevent__item {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width:1023px) {
+  // INDEX.HTML
+
+  .backimg {
+    background-image: url(../images/background/back.jpg);
+    .backimg:before {
+      display: none;
+      overflow: hidden;
+    }  
+  }
+
+  .redes {
+    font-size: 20px;
+    margin-left: 100px;
+  }
+
+  // SOBRE NOSOTROS
+
+  .nav-desk {
+    width: 82vw;
+  }
+
+  .about-desk {
+    display: none;
+  }
+
+  .about-responsive {
+    display: block;
+  }
+
+  .section__container-responsive {
+    width: 100vw;
+    margin-top: 160px;
+  }
+
+  // EVENTOS
+
+  .cardevent__container{
+    width: 100vw;
+    grid-template-columns: 245px 245px 245px;
+    grid-template-rows: repeat(10, 300px);
+    position: relative;
+    left: -15px;
+    .cardevent__item {
+      margin-left: 10px;
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1200px) {
+
+  .cardevent__container{
+    width: 100vw;
+    grid-template-columns: 235px 235px 235px 235px;
+    grid-template-rows: repeat(10, 300px);
+    position: relative;
+    left: -15px;
+    .cardevent__item {
+      margin-left: 10px;
+      width: 230px;
+    }
+  }
+}
+
