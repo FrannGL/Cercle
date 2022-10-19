@@ -1,0 +1,91 @@
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    margin-left: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+    .cards__item {
+      margin-top: 35px;
+      width: 180px;
+      height: 220px;
+      position: relative;
+      z-index: 5000;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(50%) blur(0px) opacity(100%);
+        transition: all 500ms ease-out;
+      }
+      .cards__capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        h3 {
+          color: #fff;
+          font-size: 16px;
+          font-family: "Roboto";
+          margin-bottom: 220px;
+          transition: all 500ms ease-out;
+          margin-top: 20px;
+        }
+        p {
+          color: #fff;
+          font-size: 13px;
+          font-family: "Montserrat";
+          width: 100%;
+          max-width: 220px;
+          margin-top: -70px;
+        }
+        h4 {
+          color: #fff;
+          font-size: 12px;
+          position: relative;
+          top: 40px;
+          padding: 3px;
+          font-family: "Montserrat";
+          display: inline;
+          border: 1px solid #fff;
+          transition: all 500ms ease-out;
+          cursor: pointer;
+        }
+        a {
+          text-decoration: none;
+          color: #FFF;
+        }
+      }
+    }
+    .cards__item:hover > .cards__capa {
+      opacity: 1;
+      visibility: visible;
+    }
+    .cards__item:hover > .cards__capa h3 {
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+    .cards__item:hover img {
+      transform: scale(1.2);
+      filter: grayscale(0) blur(0px) opacity(100%);
+    }
+    .cards__item > .cards__capa a:hover {
+      color: #000000;
+    }
+    
+    .cards__item > .cards__capa h4:hover {
+      background-color: #fff;
+      font-family: "Roboto";
+      font-size: 15px;
+      font-weight: bold;
+      transition: all 0.4s;
+      color: #000000;
+    }
+  }

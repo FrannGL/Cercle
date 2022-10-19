@@ -1,0 +1,101 @@
+.cardevent__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 275px 275px 275px 275px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+    gap: 20px;
+    .cardevent__item {
+      position: relative;
+      z-index: 6000;
+      width: 275px;
+      height: 300px;
+    }
+    .cardevent__face {
+      position: absolute;
+      z-index: 6000;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .5s;
+    }
+    .cardevent__front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        top: 240px;
+        width: 100%;
+        height: 60px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+      }
+      .title {
+        font-family: "Montserrat";
+        font-weight: bold;
+      }
+      .descp {
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 15px;
+        margin-left: -50px;
+      }
+    }
+    .cardevent__back {
+      transform: perspective(600px) rotateY(180deg);
+      background: rgb(3, 35, 54);
+      padding: 15px;
+      color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px #000;
+      .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 60px;
+        a {
+          font-family: "Roboto";
+          padding: 8px;
+          text-decoration: none;
+          color: #f3f3f3;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        a:hover {
+          border: 1px solid rgba(255, 255, 255, 1);
+          transition: all 0.3s ease-in-out;
+        } 
+      }
+      h3 {
+        font-family: "Montserrat";
+        font-size: 22px;
+        margin-top: 5px;
+        letter-spacing: 2px;
+      }
+      p {
+        letter-spacing: 1px;
+        font-family: "Montserrat";
+        font-size: 11px;
+      } 
+    }
+  }
+  
+  .cardevent__item:hover .cardevent__front {
+    transform: perspective(600px) rotateY(180deg);
+  }
+  
+  .cardevent__item:hover .cardevent__back {
+    transform: perspective(600px) rotateY(360deg);
+  }

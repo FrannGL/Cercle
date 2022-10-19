@@ -1,34 +1,3 @@
-.nav-desk {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  position: relative;
-  top: 0;
-  z-index: 5; }
-
-.redes {
-  font-size: 12px; }
-
-.backimg {
-  height: 1000px;
-  width: 99%;
-  position: absolute;
-  top: 0;
-  background-image: url(../images/background/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-  .backimg .backimg:before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(../images/bg-overlay.png);
-    background-repeat: repeat;
-    background-size: 1px 1px; }
-
 .container__itemuno {
   position: relative;
   right: 100px;
@@ -46,11 +15,6 @@
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   color: #fff; }
-
-.footer {
-  position: relative;
-  z-index: 1000;
-  font-family: 'Open Sans', sans-serif; }
 
 .about-responsive {
   display: none; }
@@ -322,6 +286,42 @@
   .form__info h4 {
     margin-top: 50px; }
 
+.nav-desk {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  position: relative;
+  top: 0;
+  z-index: 5; }
+
+.redes {
+  font-size: 12px; }
+
+.backimg {
+  height: 1000px;
+  width: 99%;
+  position: absolute;
+  top: 0;
+  background-image: url(../images/background/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .backimg .backimg:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../images/bg-overlay.png);
+    background-repeat: repeat;
+    background-size: 1px 1px; }
+
+.footer {
+  position: relative;
+  z-index: 1000;
+  font-family: 'Open Sans', sans-serif; }
+
 @media screen and (max-width: 399px) {
   .backimg {
     background-image: url(../images/background/back.jpg); }
@@ -367,6 +367,8 @@
     .cards__container .cards__item {
       width: 250px;
       height: 270px; }
+      .cards__container .cards__item p {
+        margin-left: 12px; }
   .form__info {
     display: none; } }
 

@@ -1,0 +1,22 @@
+.container__itemuno {
+    position: relative;
+    right: 100px;
+    top: 150px;
+    img {
+      width: 175px;
+    }
+  }
+  
+  .container__itemdos {
+    position: relative;
+    left: 80px;
+    img {
+      width: 150px;
+    }
+  }
+  
+  .text__item span {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+  }
