@@ -11,7 +11,7 @@
   .container__itemdos img {
     width: 150px; }
 
-.text__item span {
+.text__item h1 {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   color: #fff; }
@@ -21,6 +21,16 @@
 
 .about-desk {
   margin-top: 50px; }
+
+.content_title h1 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: bold; }
+
+.content_title h2 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: bold; }
 
 .imguno,
 .imgdos,
@@ -46,6 +56,19 @@
     width: 85vw;
     box-shadow: 10px -10px 0px #2b6383; }
 
+.content_h1-events {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  position: relative;
+  z-index: 5000; }
+  .content_h1-events h1 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: "Montserrat";
+    margin-left: 50px; }
+
 .cardevent__container {
   display: grid;
   justify-content: center;
@@ -54,6 +77,8 @@
   grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
   gap: 20px; }
   .cardevent__container .cardevent__item {
+    margin-top: 85px;
+    margin-bottom: 100px;
     position: relative;
     z-index: 6000;
     width: 275px;
@@ -132,6 +157,19 @@
 .cardevent__item:hover .cardevent__back {
   transform: perspective(600px) rotateY(360deg); }
 
+.content_h1-artist {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  position: relative;
+  z-index: 5000; }
+  .content_h1-artist h1 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: "Montserrat";
+    margin-left: 50px; }
+
 .cards__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
@@ -139,7 +177,7 @@
   justify-content: center;
   margin-bottom: 25px; }
   .cards__container .cards__item {
-    margin-top: 35px;
+    margin-top: 15px;
     width: 180px;
     height: 220px;
     position: relative;
@@ -347,6 +385,18 @@
   .section__container-responsive {
     width: 100vw;
     margin-top: 160px; }
+  .content_title h1 {
+    margin-top: -65px;
+    margin-bottom: 20px; }
+  .content_title h2 {
+    margin-top: 15px;
+    margin-bottom: 25px; }
+  .content_h1-events {
+    width: 100vw;
+    margin-left: -20px; }
+    .content_h1-events h1 {
+      font-size: 25px;
+      text-align: center; }
   .cardevent__container {
     width: 100vw;
     grid-template-columns: 300px;
@@ -356,6 +406,11 @@
     overflow: hidden; }
     .cardevent__container .cardevent__item {
       margin-left: 10px; }
+  .content_h1-artist {
+    width: 100vw;
+    margin-left: -20px;
+    font-size: 25px;
+    text-align: center; }
   .cards__container {
     width: 100vw;
     display: grid;
@@ -402,6 +457,20 @@
   .section__container-responsive {
     width: 100vw;
     margin-top: 160px; }
+  .content_title h1 {
+    margin-top: -65px;
+    margin-bottom: 30px;
+    font-size: 30px; }
+  .content_title h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 30px; }
+  .content_h1-events {
+    width: 100vw;
+    margin-left: -20px; }
+    .content_h1-events h1 {
+      font-size: 30px;
+      text-align: center; }
   .cardevent__container {
     width: 100vw;
     grid-template-columns: 300px;
@@ -411,6 +480,11 @@
     overflow: hidden; }
     .cardevent__container .cardevent__item {
       margin-left: 10px; }
+  .content_h1-artist {
+    width: 100vw;
+    margin-left: -20px;
+    font-size: 25px;
+    text-align: center; }
   .cards__container {
     grid-template-columns: 200px 200px; }
   .form__container {
@@ -441,6 +515,19 @@
   .section__container-responsive {
     width: 100vw;
     margin-top: 160px; }
+  .content_title h1 {
+    margin-top: -65px;
+    margin-bottom: 30px;
+    font-size: 40px; }
+  .content_title h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 30px; }
+  .content_h1-artist {
+    width: 100vw;
+    margin-left: -20px;
+    font-size: 25px;
+    text-align: center; }
   .cardevent__container {
     width: 100vw;
     grid-template-columns: 300px 300px;
@@ -481,6 +568,14 @@
   .section__container-responsive {
     width: 100vw;
     margin-top: 160px; }
+  .content_title h1 {
+    margin-top: -65px;
+    margin-bottom: 30px;
+    font-size: 45px; }
+  .content_title h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 30px; }
   .cardevent__container {
     width: 100vw;
     grid-template-columns: 300px 300px;
@@ -509,6 +604,14 @@
   .section__container-responsive {
     width: 100vw;
     margin-top: 160px; }
+  .content_title h1 {
+    margin-top: -65px;
+    margin-bottom: 30px;
+    font-size: 45px; }
+  .content_title h2 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 30px; }
   .cardevent__container {
     width: 100vw;
     grid-template-columns: 245px 245px 245px;
