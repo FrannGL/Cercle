@@ -1,7 +1,7 @@
 {
-  "name": "cercle-copia",
+  "name": "Project-Cercle",
   "version": "1.0.0",
-  "description": "",
+  "description": "Experiencias únicas en lugares cuidadosamente seleccionados alrededor del mundo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
