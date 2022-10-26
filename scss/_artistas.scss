@@ -5,10 +5,10 @@
   position: relative;
   z-index: 5000;
   h1 {
-    color: #fff;
+    color: $color-fuente-principal;
     font-size: 30px;
     letter-spacing: 5px;
-    font-family: "Montserrat";
+    font-family: $font-family-secundario;
     margin-left: 50px;
   }
 }
@@ -46,28 +46,29 @@
         visibility: hidden;
         text-align: center;
         h3 {
-          color: #fff;
+          color: $color-fuente-principal;
           font-size: 16px;
-          font-family: "Roboto";
+          font-weight: bold;
+          font-family: $font-family-secundario;
           margin-bottom: 220px;
           transition: all 500ms ease-out;
           margin-top: 20px;
         }
         p {
-          color: #fff;
+          color: $color-fuente-principal;
           font-size: 13px;
-          font-family: "Montserrat";
+          font-family: $font-family-secundario;
           width: 100%;
           max-width: 220px;
           margin-top: -70px;
         }
         h4 {
-          color: #fff;
+          color: $color-fuente-principal;
           font-size: 12px;
           position: relative;
           top: 40px;
           padding: 3px;
-          font-family: "Montserrat";
+          font-family: $font-family-secundario;
           display: inline;
           border: 1px solid #fff;
           transition: all 500ms ease-out;
@@ -75,7 +76,7 @@
         }
         a {
           text-decoration: none;
-          color: #FFF;
+          color: $color-fuente-principal;
         }
       }
     }
@@ -97,7 +98,7 @@
     
     .cards__item > .cards__capa h4:hover {
       background-color: #fff;
-      font-family: "Roboto";
+      font-family: $font-family-secundario;
       font-size: 15px;
       font-weight: bold;
       transition: all 0.4s;

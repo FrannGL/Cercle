@@ -8,8 +8,8 @@
       width: 350px;
       height: 700px;
       background-color: rgb(15, 14, 14);
-      color: #fff;
-      font-family: "Montserrat", sans-serif;
+      color: $color-fuente-principal;
+      font-family: $font-family-secundario;
       h1 {
         text-align: center;
         margin-top: 10px;
@@ -24,7 +24,7 @@
         outline: none;
         background: none;
         border: none;
-        color: #fff;
+        color: $color-fuente-principal;
         border-bottom: 1px solid red;
       }
       .label {
@@ -34,7 +34,7 @@
         outline: none;
         background: none;
         border: none;
-        color: #fff;
+        color: $color-fuente-principal;
       }
       input, textarea {
         border-bottom: 1px solid red;
@@ -50,9 +50,9 @@
           border: none;
           margin-top: 8px;
           width: 200px;
-          color: #fff;
+          color: $color-fuente-principal;
           background-color: transparent;
-          font-family: "Montserrat";
+          font-family: $font-family-secundario;
           cursor: pointer;
         }
       }
@@ -65,10 +65,10 @@
   .form__info {
     width: 300px;
     height: 700px;
-    color: #fff;
+    color: $color-fuente-principal;
     background-color: #000;
     padding-left: 10px;
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-family-secundario;
     font-size: 13px;
     h2 {
       margin-top: 10px;

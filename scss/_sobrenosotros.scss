@@ -32,10 +32,10 @@
     align-items: center;
     gap: 25px;
     margin-top: 250px;
-    color: #fff;
+    color: $color-fuente-principal;
     text-align: center;
     width: 33%;
-    font-family: "Montserrat";
+    font-family: $font-family-secundario;
     font-size: 19px;
     .imguno-responsive,
     .imgdos-responsive,
